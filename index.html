@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KAAL Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: 'Poppins', sans-serif;
+      background: #0a0a0a;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: linear-gradient(180deg, #000 0%, #111 100%);
+      background-attachment: fixed;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+      background: #0a0a0a;
+    }
+
+    header h1 {
+      font-size: 3em;
+      background: linear-gradient(90deg, #ff007a, #00e0ff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeInDown 1s ease-in-out;
+    }
+
+    .subtitle {
+      font-size: 1.3em;
+      color: #ff337a;
+      margin-top: 10px;
+      animation: fadeInDown 1.4s ease-in-out;
+    }
+
+    .section {
+      padding: 60px 20px;
+      border-top: 1px solid rgba(255,255,255,0.05);
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 30px;
+      color: #00e0ff;
+      position: relative;
+      animation: fadeInUp 1.2s ease-in-out;
+    }
+
+    .section-title::after {
+      content: "";
+      width: 60px;
+      height: 3px;
+      background: #ff337a;
+      display: block;
+      margin: 10px auto 0;
+      border-radius: 5px;
+    }
+
+    .about-image {
+      display: block;
+      margin: 0 auto 30px;
+      max-width: 280px;
+      border: 3px solid #ff337a;
+      border-radius: 10px;
+      filter: brightness(0.95);
+    }
+
+    .info {
+      max-width: 800px;
+      margin: 0 auto;
+      font-size: 1.1em;
+      line-height: 1.8;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .info p {
+      margin-bottom: 10px;
+    }
+
+    .info strong {
+      color: #00e0ff;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      max-width: 1000px;
+      margin: 30px auto;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 25px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: 0.4s ease;
+      box-shadow: 0 0 10px #00e0ff11;
+      animation: fadeInUp 1.7s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px #00e0ff66;
+    }
+
+    .card h3 {
+      color: #ff337a;
+      margin-bottom: 10px;
+    }
+
+    .channels {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      max-width: 900px;
+      margin: 30px auto;
+    }
+
+    .channel-card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.1);
+      transition: 0.4s ease;
+    }
+
+    .channel-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px #00e0ff55;
+    }
+
+    .channel-card h4 {
+      color: #00e0ff;
+      margin-bottom: 10px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(90deg, #ff007a, #00e0ff);
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      margin-top: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: linear-gradient(90deg, #00e0ff, #ff007a);
+      box-shadow: 0 0 15px #00e0ff88;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 0.9em;
+      color: #999;
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInDown {
+      from {opacity: 0; transform: translateY(-40px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>KAAL DEVELOPER PORTFOLIO</h1>
+    <p class="subtitle">Full Stack Developer & Security Specialist</p>
+    <p style="margin-top: 10px; color: #999;">@KAALHAX - Expert in Automation, Bots & Secure Systems</p>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">About Me</h2>
+    <img src="1000018023.png" alt="Kaal Profile" class="about-image">
+    <div class="info">
+      <p>Hi! I'm <strong>KAALCRACKERYT</strong> — a creative tech lover building bots, websites, and Telegram tools. I specialize in creating secure, efficient, and innovative solutions for automation and security platforms. Passionate about development and always ready to explore new horizons in tech.</p>
+      <p><strong>Country:</strong> India</p>
+      <p><strong>Age:</strong> 16</p>
+      <p><strong>Education:</strong> High School</p>
+      <p><strong>Hobbies:</strong> Coding, Gaming, Designing</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">My Skills</h2>
+    <div class="grid">
+      <div class="card"><h3>PHP & Python Bots</h3><p>Automation, data parsing, and interaction using PHP and Python.</p></div>
+      <div class="card"><h3>HTML, CSS, JS</h3><p>Responsive and interactive front-end development.</p></div>
+      <div class="card"><h3>Telegram Bot Development</h3><p>Telegram bots for automation, notifications, user interaction.</p></div>
+      <div class="card"><h3>Web UI/UX Design</h3><p>Modern interfaces with a focus on user experience.</p></div>
+      <div class="card"><h3>Automation Systems</h3><p>Creating streamlined automation processes.</p></div>
+      <div class="card"><h3>Security Solutions</h3><p>Secure applications and data protection strategies.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">My Channels</h2>
+    <div class="channels">
+      <div class="channel-card">
+        <h4>Trading Channel</h4>
+        <p>Trading strategies, market insights, and financial techniques.</p>
+        <a class="btn" href="#">Join Trading Channel</a>
+      </div>
+      <div class="channel-card">
+        <h4>Source Code Channel</h4>
+        <p>Premium source codes and dev resources.</p>
+        <a class="btn" href="#">Join Source Channel</a>
+      </div>
+      <div class="channel-card">
+        <h4>Hacking Channel</h4>
+        <p>Learn ethical hacking, cybersecurity, and testing.</p>
+        <a class="btn" href="#">Join Hacking Channel</a>
+      </div>
+      <div class="channel-card">
+        <h4>Gaming Channel</h4>
+        <p>Get latest hacks, mods, and cheats for games.</p>
+        <a class="btn" href="#">Join Gaming Channel</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">Contact Me</h2>
+    <p style="text-align: center;">For inquiries or collaborations, contact me on Telegram:</p>
+    <p style="text-align: center;"><a class="btn" href="https://t.me/KAALHAX" target="_blank">@KAALHAX</a></p>
+  </section>
+
+  <footer>
+    © 2025 KAAL Developer Portfolio. All rights reserved.<br>
+    Made with ❤️ by KAALCRACKERYT
+  </footer>
+</body>
+</html>
